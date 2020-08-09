@@ -1,0 +1,11 @@
+<h1>MY APPS Pages</h1>
+
+
+<% @apps.each do |myapps| %>    
+    <p><strong><%= myapps.name %>: <%= myapps.id %></strong></p>
+ <% end %>
+
+ <%= link_to "Previous Page",  app_path(page: @page - 1)%>
+ |
+ <%= link_to "Next Page",  app_path(page: @page + 1)%>
+ 
