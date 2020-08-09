@@ -12,6 +12,9 @@ To achieve the API request, I use rnder json to set up and load the data file. I
 The functionality I added to the pagination are start, max, by and order.
 
 start: Where should you data start. 0 is the starting point.
+
 max:   How many data appear per request.
+
 by:    filter by id or by name.
+
 order: order by ASC or DESC.
