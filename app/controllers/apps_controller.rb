@@ -4,7 +4,7 @@ class AppsController < ApplicationController
     def index
         start = params.fetch(:start,0).to_i
         last = params.fetch(:last,100).to_i
-        max = params.fetch(:max,50).to_i
+        max = params.fetch(:max,2).to_i
         by = params.fetch(:by, 'id').to_s
         order = params.fetch(:order, "ASC").to_s
         apps = App.offset(start * max).limit(max).order(by + " " + order)
