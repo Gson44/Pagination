@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   root 'apps#index', as: 'app'
 
-  namespace 'api' do
-    resources :apps
-  end
+  
+  resources :apps
+  
 end
