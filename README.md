@@ -17,3 +17,5 @@ The functionality I added to the pagination are start, max, by and order.
 **by:**    filter by id or by name.
 
 **order:** order by ASC or DESC.
+
+For testing I use 'assert_routing({method: 'get', path: '/apps'}, {controller: "apps", action: "index"})'
