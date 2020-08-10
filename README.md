@@ -2,9 +2,9 @@
 
 # Pagination
 
-**Pagination** is a type of technique use to query large data sets. There are varienty of ways in apply pagination and also libraries to help manage dataset.
+**Pagination** is a type of technique use to query large data sets. There are varienty of ways in applying pagination and also libraries to help manage dataset.
 
-In this project, I made a basic API dataset with 100 data that can be access through this website https://pagination123.herokuapp.com/apps. I use Ruby on Rails for this project with no libraries for pagination.For the data, I added though seeds.rb file.
+In this project, I made a basic API dataset with 100 data that can be access through this website https://pagination123.herokuapp.com/apps. I use Ruby on Rails for this project with no libraries for pagination.
 
 To achieve the API request, I use render json to set up and load the data file. I add all the parameter into an apps and added parameters into it.
 ```
@@ -31,13 +31,13 @@ The functionality I added to the pagination are start, max, by and order.
 
 **max:**   How many data appear per request.
 
-**by:**    filter by id or by name.
+**by:**    Filter by id or by name.
 
-**order:** order by ASC or DESC.
+**order:** Order by ASC or DESC.
 
 # Testing
 
-For testing, I use rails builtin test module to test the endpoint of /apps. It ran 3 assertion and 0 failure. The code is achieve it is down below
+For testing, I use rails builtin test module to test the endpoint of /apps. It ran 3 assertion and 0 failure. The code I use to achieve it is down below
 ```
 test "api endpoint exist and work" do
     
