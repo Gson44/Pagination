@@ -18,4 +18,10 @@ The functionality I added to the pagination are start, max, by and order.
 
 **order:** order by ASC or DESC.
 
-For testing I use `assert_routing({method: 'get', path: '/apps'}, {controller: "apps", action: "index"})`
+**Testing**
+
+For testing, I use rails builtin test module to test the endpoint of /apps. It ran 3 assertion and 0 failure. The code is achieve it is down below
+
+`test "api endpoint exist and work" do
+    assert_routing({method: 'get', path: '/apps'}, {controller: "apps", action: "index"}) 
+  end`
