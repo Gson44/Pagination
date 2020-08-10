@@ -9,13 +9,21 @@ In this project, I made a basic API dataset with 100 data that can be access thr
 To achieve the API request, I use render json to set up and load the data file. I add all the parameter into an apps and added parameters into it.
 
 `def index
+
         start = params.fetch(:start,0).to_i
+
         last = params.fetch(:last,100).to_i
+        
         max = params.fetch(:max,2).to_i
+        
         by = params.fetch(:by, 'id').to_s
+        
         order = params.fetch(:order, "ASC").to_s
+        
         apps = App.offset(start * max).limit(max).order(by + " " + order)
+        
         render json: {status: 'SUCCESS', message: 'Loaded Apps', range:apps}, status: :ok
+    
     end`
 
 The functionality I added to the pagination are start, max, by and order.
